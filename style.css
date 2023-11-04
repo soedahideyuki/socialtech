@@ -89,66 +89,85 @@ h3{font-size: 27px;}
   margin-top: 50px;
   width: 100%;
 }
-
-#product{
+/* プロダクト */
+#product {
   background-color: #fafafa;
-  margin:80px 0px 80px 0px;
+  margin: 80px 0 80px 0;
   padding: 10px 40px 0px 40px;
 }
-#product > div{
+
+/* 外枠 */
+#product > div {
   margin-top: 40px;
   display: flex;
 }
-#product-left{
+
+/* 左のカラム */
+#product-left {
   width: 50%;
   margin-right: 20px;
 }
-#product-right{
+
+/* 右のカラム */
+#product-right {
   width: 50%;
   margin-left: 20px;
   margin-top: 80px;
 }
-#pruduvt-left > div{
+
+/* 画像＋説明の枠 */
+#product-left > div {
   position: relative;
   height: 480px;
   margin-right: 20px;
 }
-#pruduvt-right > div{
+#product-right > div {
   position: relative;
   height: 480px;
   margin-left: 20px;
 }
-.product-photo{
-  width:100%;
+
+/* 画像*/
+.product-photo {
+  width: 100%;
 }
 
-.product-explain{
+/* 説明文の枠 */
+.product-explain {
   background-color: #ffffff;
-  /* 質問 */
   position: absolute;
-  left:0px;
-  top:280px; 
-  margin: 0px 40px 0px 40px;
+  left: 0;
+  top: 280px;
+  margin: 0 40px 0 40px;
   padding: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
 }
-.product-explain > span{
+
+/* 説明文の英語 */
+.product-explain > span {
   color: #2710d5;
   font-weight: bold;
   font-size: 16px;
-  margin: 0px;
+  margin: 0;
 }
-.product-explain > h3{
-  font-size:20px;
-  margin:5px 0px 5px 0px;
+
+/* 説明文の見出し */
+.product-explain > h3 {
+  font-size: 20px;
+  margin: 5px 0 5px 0;
 }
-.product-explain > p{
-  font-size:14px;
-  margin: 0px;
+
+/* 説明文 */
+.product-explain > p {
+  font-size: 14px;
+  margin: 0;
 }
-#product-more{
-  margin: 0px auto -42px auto;
-}
+
+/* 「もっとみる」ボタン */
+#product-more {
+  margin: 0 auto -42px auto;}
+  
+
 #aboutus{margin: 80px auto;}
 #aboutus > div{
   display: flex;
