@@ -12,4 +12,13 @@ $(function(){
       opacity: 1 , 
     },100);
   });
+
+  $('.carousel').slick({
+    autoplay: true,
+    dots: true,
+    infinite: true,
+    autoplayspeed: 5000,
+    arrows: false,
+  });
 });
+
