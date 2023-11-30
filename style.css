@@ -6,6 +6,14 @@ body{
   min-width: 960px;
   margin: 0 auto;
 }
+.carousel{
+  width: 885px;
+  margin-left: 20px;
+}
+
+.carouselImg{
+  width: 855px;
+}
 p{
   font-size: 15px;
 }
@@ -527,12 +535,22 @@ body{
   min-width: 375px;
   margin: 0;
 }
+.carousel{
+  width: 375px;
+  margin: 0 auto 0 auto;
+}
+.carouselImg{
+  width: 375px;
+}
 #nav-pc {
   display: none;
 }
 #menu-sp{
-  float: right;
-  padding: 0;
+  /* float: right;
+  padding: 0; */
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 #nav-sp{
   background-color: #2710d5;
