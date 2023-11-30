@@ -49,7 +49,7 @@ $(function(){
     inputCheck();
   });
 
-  inputCheck=()=>{//質問　これはjQuery??
+  inputCheck=()=>{    //質問　これはjQuery??
     console.log('inputCheck関数の呼び出し');
   }  
 });
