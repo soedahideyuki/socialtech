@@ -4,7 +4,7 @@
     <title>SocialTech</title>
     <meta charset="utf-8">
     <meta name="description" content="SocialTechはEdTech業界のリーディングカンパニーを目指します。">
-    <meta name="viewport" content="width-=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width-=device-width,initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
 
     <!-- slickの読み込み -->
@@ -294,7 +294,7 @@
         <section id="contact">
           <h2 class="index-h2">CONTACT</h2>
           <h3>問い合わせ</h3>
-          <form action="https://api.staticforms.xyz/submit" method="post">
+          <form id="form">
             <input type="text" name="honeypot" style="display:none">
             <input type="hidden" name="accessKey" value="c697e17d-039a-4f78-9083-67289902a03f">
             <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました" />
@@ -305,7 +305,7 @@
                 <label class="contact-label">お名前<span class="contact-span">必須</span></label>
               </div>
               <div>
-                <input type="text" name="name" placeholder="入力してください" class="contact-textbox">
+                <input  id="name" type="text" name="name" placeholder="入力してください" class="contact-textbox">
               </div>
             </div>
             <div>
@@ -313,7 +313,7 @@
                 <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
               </div>
               <div>
-                <input type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
+                <input id="furigana"  type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
               </div>
             </div>
             <div>
@@ -321,7 +321,7 @@
                 <label class="contact-label">メールアドレス<span class="contact-span">必須</span></label>
               </div>
               <div>
-                <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+                <input id="email"  type="text" name="email" placeholder="入力してください" class="contact-textbox">
               </div>
             </div>
             <div>
@@ -329,7 +329,7 @@
                 <label class="contact-label">電話番号<span class="contact-span">必須</span></label>
               </div>
               <div>
-                <input type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+                <input  id="tel" type="text" name="tel" placeholder="入力してください" class="contact-textbox">
               </div>
             </div>
             <div>
@@ -337,7 +337,7 @@
                 <label class="contact-label">お問い合わせ内容<span class="contact-span">必須</span></label>
               </div>
               <div>
-                <textarea name="message" class="contact-textarea" placeholder="入力してください"></textarea>
+                <textarea id="message" name="message" class="contact-textarea" placeholder="入力してください"></textarea>
               </div>
             </div>
             <div>
@@ -384,11 +384,11 @@
                     お客様がご自身の個人情報を弊社に提供されるか否かは、お客様のご判断によりますが、もしご提供されない場合には、適切なサービスが提供できない場合がありますのであらかじめご了承ください。
                   </div>
                 </details>
-                <input type="checkbox" name="agree">
+                <input id="agree" type="checkbox" name="agree">
                 <span>個人情報の取り扱いについてご同意いただける場合は、チェックしてください。</span>
               </div>
             </div>
-            <input type="image" src="images/button-submit.png" alt="送信する"> 
+            <input id="submit" type="image" src="images/button-submit.png" alt="送信する"> 
           </form>
         </section>
       </article>
