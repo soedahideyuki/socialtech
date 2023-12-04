@@ -119,7 +119,30 @@ $(function(){
     } else {
       // エラーなし(テキストボックスに正確に入力あり)
       $('#tel').css('background-color','#fafafa');
-    };
+    }
+
+    // 個人情報チェックボックスのチェック
+    if($('#agree').prop('checked') == false){ //チェックボックスがチェックされていないとfalseが返る
+    error = true;
+    message += '個人情報の取り扱いについて同意いただける場合は、チェックボックスにチェックして下さい。\n';
+    }
+
+    // エラーの有無で送信ボタンを切り替え
+    if (error == true){  
+      //すべてのinputのどこかでエラーが起こっている場合
+      $('#dubmit').attr('src' , 'images/button-submit.png');
+    }else {
+      $('#submit').attr('src', 'images/button-submit-blue.png');
+    }
+
+    // オブジェクトでエラー判定とメッセージを返す
+    result = {
+      error: error,
+      message: message
+    }
+
+    // 戻り値ちしてエラーがあるかどうかを返す
+    return result;
   }
 });
 
